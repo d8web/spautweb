@@ -30,11 +30,49 @@
 }
 
 @media only screen and (max-width: 788px) {
+    .container {
+        height: auto;
+        margin: 20px 0px;
+    }
+
+    header {
+        padding: 0 10px;
+        flex-direction: column;
+        height: auto;
+    }
+
+    header .logo {
+        margin: 10px 0px;
+    }
+
+    header .logo {
+        width: 300px;
+    }
+
+    .menu-item {
+        flex-direction: column;
+    }
+
+    .menu-item h1 {
+        margin-bottom: 10px;
+    }
+
     .buttons-area,
     .grid-area,
     .buttons-grid {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(1, 1fr);
+    }
+
+    footer {
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer p {
+        text-align: center;
     }
 
     .button-area {
@@ -53,6 +91,11 @@
 }
 
 @media (min-width: 280px) and (max-width: 300px) {
+
+    header .logo {
+        width: 260px;
+    }
+
     .container {
         height: auto;
     }
